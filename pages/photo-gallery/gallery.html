@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Gallery</title>
+    <link rel="stylesheet" href="../../styles.css">
+    <link rel="stylesheet" href="gallery.css">
+</head>
+<script src="../../components/header/loadHeader.js"></script>
+<body>
+ <div id="header"></div>
+<section class="gallery-section">
+    <h1>Our Gallery</h1>
+
+    <div class="gallery-container">
+        <!-- Gallery Images -->
+        <div class="gallery-slide active">
+            <img src="../../img/real/gallery/img1.jpeg" alt="Image 1">
+        </div>
+        <div class="gallery-slide">
+            <img src="../../img/real/gallery/img2.jpeg" alt="Image 2">
+        </div>
+        <div class="gallery-slide">
+            <img src="../../img/real/gallery/img3.jpeg" alt="Image 3">
+        </div>
+        <div class="gallery-slide">
+            <img src="../../img/real/gallery/img4.jpeg" alt="Image 4">
+        </div>
+        <div class="gallery-slide">
+            <img src="../../img/real/gallery/img5.jpeg" alt="Image 4">
+        </div>
+        <div class="gallery-slide">
+            <img src="../../img/real/gallery/img6.jpeg" alt="Image 4">
+        </div>
+        <div class="gallery-slide">
+            <img src="../../img/real/gallery/img7.jpeg" alt="Image 4">
+        </div>
+        <div class="gallery-slide">
+            <img src="../../img/real/gallery/img8.jpeg" alt="Image 4">
+        </div>
+        <div class="gallery-slide">
+            <img src="../../img/real/gallery/img9.jpeg" alt="Image 4">
+        </div>
+        <div class="gallery-slide">
+            <img src="../../img/real/gallery/img10.jpeg" alt="Image 4">
+        </div>
+
+
+        <!-- Navigation Arrows -->
+        <button class="prev">&#10094;</button>
+        <button class="next">&#10095;</button>
+    </div>
+</section>
+
+<script>
+    const slides = document.querySelectorAll('.gallery-slide');
+    const next = document.querySelector('.next');
+    const prev = document.querySelector('.prev');
+    let currentIndex = 0;
+
+    function showSlide(index) {
+        slides.forEach(slide => slide.classList.remove('active'));
+        slides[index].classList.add('active');
+    }
+
+    next.addEventListener('click', () => {
+        currentIndex = (currentIndex + 1) % slides.length;
+        showSlide(currentIndex);
+    });
+
+    prev.addEventListener('click', () => {
+        currentIndex = (currentIndex - 1 + slides.length) % slides.length;
+        showSlide(currentIndex);
+    });
+</script>
+
+</body>
+</html>

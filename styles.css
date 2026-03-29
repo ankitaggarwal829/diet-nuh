@@ -102,6 +102,10 @@ body {
     display: block;
 }
 
+.h2 {
+  color: #003366;
+}
+
 
 /* HERO */
 .hero {
@@ -147,6 +151,28 @@ body {
     padding: 15px 0;
 }
 
+/* Theme-aware button styling */
+.theme-button {
+  display: inline-block;
+  padding: 0.6rem 1.4rem;
+  font-size: 1rem;
+  font-weight: 500;
+  text-decoration: none;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  transition: background 0.3s, color 0.3s;
+  margin-top: 1rem;
+  
+  /* Example theme colors – will adapt to dark/light theme using CSS variables */
+  background-color: var(--primary-color, #003366);
+  color: var(--button-text-color, #fff);
+}
+
+.theme-button:hover {
+  background-color: var(--primary-hover-color, #470bfc);
+}
+
 /* RESPONSIVE */
 @media (max-width: 768px) {
     .header-container {
@@ -163,4 +189,6 @@ body {
         flex-direction: column;
         align-items: center;
     }
+
+    
 }

@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Contact</title>
+    <link rel="stylesheet" href="../../styles.css">
+</head>
+<script src="../../components/header/loadHeader.js"></script>
+<body>
+
+<!-- Contact Us Page -->
+ <div id="header"></div>
+<section class="contact-section">
+  <div class="contact-container">
+
+    <!-- Heading & Intro -->
+    <div class="contact-intro">
+      <h1>Get in Touch with Us!</h1>
+      <p>Have a question or need assistance? Contact us today — we’re here to help you every step of the way!</p>
+    </div>
+
+    <!-- Contact Details -->
+    <div class="contact-details">
+      <div class="contact-card">
+        <h3>Phone Number</h3>
+        <p>01732297518</p>
+      </div>
+      <div class="contact-card">
+        <h3>Email</h3>
+        <p>Principaldietmalab@gmail.com</p>
+      </div>
+      <div class="contact-card">
+        <h3>Office Address</h3>
+        <p>Principal DIET MALAB NUH -122107</p>
+      </div>
+    </div>
+
+    <!-- Google Map -->
+    <div class="map-container">
+      <iframe loading="lazy" 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3521.340862924739!2d77.0088921!3d28.044615099999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3972cd5640a1b10b%3A0x3cf0adcf6820921e!2sDIET%20Nuh%20Malab!5e0!3m2!1sen!2sin!4v1774788175560!5m2!1sen!2sin"
+            title="District Institue of Education and Training Nuh" 
+            aria-label="District Institue of Education and Training Nuh"
+            allowfullscreen>
+      </iframe>
+    </div>
+
+  </div>
+</section>
+
+<style>
+/* Contact Section */
+.contact-section {
+  padding: 50px 20px;
+  background-color: var(--section-bg, #f9f9f9);
+  font-family: Arial, sans-serif;
+}
+
+.contact-container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+/* Intro */
+.contact-intro {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.contact-intro h1 {
+  font-size: 2rem;
+  color: var(--text-color, #333);
+  margin-bottom: 10px;
+}
+
+.contact-intro p {
+  font-size: 1.1rem;
+  color: var(--text-color-secondary, #555);
+}
+
+/* Contact Details Cards */
+.contact-details {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+
+.contact-card {
+  background-color: var(--card-bg, #fff);
+  padding: 20px 15px;
+  width: 250px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  text-align: center;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.contact-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
+.contact-card h3 {
+  font-size: 1.1rem;
+  color: var(--primary-color, #4caf50);
+  margin-bottom: 10px;
+}
+
+.contact-card p {
+  font-size: 1rem;
+  color: var(--text-color, #333);
+  margin: 0;
+}
+
+/* Map */
+.map-container {
+  width: 100%;
+  height: 400px;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.map-container iframe {
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .contact-details {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+</style>
+
+</body>
+</html>
