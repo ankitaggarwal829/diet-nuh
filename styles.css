@@ -1,0 +1,165 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    line-height: 1.6;
+}
+
+/* CONTAINER */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* HEADER */
+.header {
+    background: #f8f9fa;
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo img {
+    width: 70px;
+}
+
+.title {
+    margin-left: 15px;
+}
+
+/* NAVBAR */
+.navbar {
+    background: #003366;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+}
+
+.nav-links li {
+    position: relative;
+}
+
+.nav-links a {
+    display: block;
+    padding: 15px 20px;
+    color: white;
+    text-decoration: none;
+}
+
+.nav-links a:hover {
+    background: #0055aa;
+}
+
+/* DROPDOWN */
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    background: white;
+    min-width: 200px;
+    top: 100%;
+}
+
+.dropdown-menu li {
+    border-bottom: 1px solid #ddd;
+}
+
+.dropdown-menu a {
+    color: black;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+/* SLIDER */
+.slider {
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+}
+
+.slide {
+    width: 100%;
+    height: 400px;
+    display: none;
+    object-fit: cover;
+}
+
+.slide.active {
+    display: block;
+}
+
+
+/* HERO */
+.hero {
+    background: url('hero.jpg') center/cover no-repeat;
+    color: white;
+    text-align: center;
+    padding: 80px 20px;
+    background-color: #333;
+}
+
+/* SECTIONS */
+.section {
+    padding: 50px 0;
+    text-align: center;
+}
+
+.bg-light {
+    background: #f4f4f4;
+}
+
+/* CARDS */
+.cards {
+    display: flex;
+    gap: 20px;
+    margin-top: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.card {
+    background: white;
+    padding: 20px;
+    width: 250px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+/* FOOTER */
+.footer {
+    background: #003366;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    .header-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .nav-links {
+        flex-direction: column;
+    }
+
+    .cards {
+        flex-direction: column;
+        align-items: center;
+    }
+}
