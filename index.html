@@ -1,10 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <base href="/diet-nuh/">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DIET Nuh</title>
+
+     <!-- Dynamically set base path for GitHub Pages project site -->
+  <script>
+    if (window.location.pathname.includes("diet-nuh")) {
+      document.write('<base href="/diet-nuh/">');
+    } else {
+      document.write('<base href="/">');
+    }
+  </script>
+
     <link rel="stylesheet" href="styles.css">
      <link rel="stylesheet" href="card.css">
     <link rel="stylesheet" href="stats.css">
